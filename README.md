@@ -1,4 +1,4 @@
-# Python_basic
+## Python_basic
 ## Python check list:
 0. variable and why we need variable
 1. if statement
