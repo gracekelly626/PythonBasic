@@ -6,13 +6,25 @@ class Person:
   def __init__(self, name, age, address):
 ## self is usually the first parameter of a method
     self.m_name = name
+## usually self.XX is a member variable of a class. it is carried by self/instance. usually cannot be touched by other instance/object 
     self.m_age = age
     self.m_address = address
 
   def getName(self):
 ## even the getName method doesn't have any specific parameters, should put 'self' as the first parameter. 
-      return self.m_name
+    return self.m_name
 
-k = Person("Kuangdi", 3, "E14")
+  def getAddress(self):
+    return self.m_address
+
+  def changeAddress(self, new_address):
+    self.m_address = new_address
+
+k = Person("Kuangdi", 3, "E14") ## self is k 
+
 print(k.getName())
+## print(k.m_name) in general cases, it is not allowed although in python it works.
 #function of a class aka method 
+print(k.getAddress())
+k.changeAddress("E1")
+print(k.getAddress())
