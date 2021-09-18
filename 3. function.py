@@ -23,13 +23,17 @@ print('------')
 
 def return_circle_area(local_area):
   if local_area <= 0:
-    return'this is not valid:'+ str(local_area) 
+    return 'this is not valid:'+ str(local_area) 
   elif local_area >= 50:
     return 'this is such a big circle:' + str(local_area)
   elif 50> local_area >= 40:
     return 'this is such a medium circle:'+ str(local_area)
   else:
-    return'this is such a small circle:'+ str(local_area)
+    return 'this is such a small circle:'+ str(local_area)
 
 result1 = return_circle_area(area1)
 print(result1)
+
+
+## concept of parameter
+## parameter aka argument 
