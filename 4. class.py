@@ -28,3 +28,23 @@ print(k.getName())
 print(k.getAddress())
 k.changeAddress("E1")
 print(k.getAddress())
+
+## home assisgnment 
+## 创建一个新的Person的object, 然后用一个loop把它年龄从0改到100岁, 并且print出来
+class young_lady:
+  def __init__(self,name, age, beauty, IQ):
+    self.m_name = name
+    self.m_age = age
+    self.m_beauty = beauty
+
+  def getAge(self):
+    return self.m_age
+  
+  def changeAge(self,new_age):
+    self.m_age = new_age
+
+k = young_lady('Kuangdi', 3, 'super pretty', 'super intellegent')
+
+for i in range(1,101):
+  k.changeAge(i)
+  print(k.getAge())
