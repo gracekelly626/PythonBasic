@@ -78,3 +78,64 @@ employee_list.append(w)
 
 for i in employee_list:
   print(i.getName())
+  
+## 3. advanced class
+class Employee:
+  def __init__(self, name, id, years_of_experience, base_salary):
+    self.m_name = name 
+    self.m_id = id
+    self.m_years = years_of_experience
+    self.m_base_salary = base_salary
+
+  def getName(self):
+    return self.m_name
+
+  def getID(self):
+    return self.m_id
+  
+  def getBaseSalary(self):
+    return self.m_base_salary
+
+  def getSalary(self):
+    return self.m_base_salary
+
+# QuantDev class inherits from Employee class
+# aka QuantDev class is a derived class of Employee - Employee is a base class of QuantDev
+class Quant(Employee): 
+    def __init__(self, name, id, years_of_experience, base_salary, bonus):
+# super() 调用base class的methods, member variables
+        super().__init__(name, id, years_of_experience, base_salary)
+        self.m_bonus = bonus
+        
+    def getSalary(self):
+        return self.m_bonus+super().getBaseSalary()
+        #self.m_base_salary也可以work， 但是不推荐， 在class中尽量用公开的东西
+
+class QuantTrader(Quant):
+  def __init__(self, name, id, years_of_experience, base_salary, bonus, commission):
+    super().__init__(name, id, years_of_experience, base_salary, bonus)
+    self.m_commision = commission
+  
+  def getSalary(self):
+    return self.m_commision + super().getSalary()
+    # 如果写super(Quant, self).getSalary() 就是employee class里面的salary, ie, super(Parent, self).my_method()
+    
+
+k = Employee("Kuangdi", "G01222298", 2, 50)
+#print(k.getName())
+#print(k.getID())
+
+m = Quant("MC", "C222222", 10,100, 50)
+#print(m.getName())
+#print(m.getID())
+
+w = Employee("Wuyang", "F3333333", 10,150)
+
+p = QuantTrader(name="Pangpang", id="M6666666", years_of_experience=3, base_salary=50,bonus=50, commission=20)
+
+employee_list = [k,m]
+employee_list.append(w)
+employee_list.append(p)
+
+for i in employee_list:
+  print(i.getName(), ":", i.getSalary())
