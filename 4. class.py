@@ -51,3 +51,30 @@ for i in range(1,101):
   
  ######################################
 ## 2. advanced class
+class Employee:
+  def __init__(self, name, id, years_of_experience):
+    self.m_name = name 
+    self.m_id = id
+    self.m_years = years_of_experience
+
+  def getName(self):
+    return self.m_name
+
+  def getID(self):
+    return self.m_id
+
+k = Employee("Kuangdi", "G01222298", 2)
+#print(k.getName())
+#print(k.getID())
+
+m = Employee("MC", "C222222", 10)
+#print(m.getName())
+#print(m.getID())
+
+w = Employee("Wuyang", "F3333333", 10)
+
+employee_list = [k,m]
+employee_list.append(w)
+
+for i in employee_list:
+  print(i.getName())
