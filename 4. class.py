@@ -139,3 +139,5 @@ employee_list.append(p)
 
 for i in employee_list:
   print(i.getName(), ":", i.getSalary())
+  
+homework - design a similar frame
