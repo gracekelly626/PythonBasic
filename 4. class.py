@@ -1,4 +1,4 @@
-
+## 1. basic class
 ## class is like the blueprint. can tell people how to create instances
 ## instance aka object
 class Person:
@@ -48,3 +48,6 @@ k = young_lady('Kuangdi', 3, 'super pretty', 'super intellegent')
 for i in range(1,101):
   k.changeAge(i)
   print(k.getAge())
+  
+ ######################################
+## 2. advanced class
