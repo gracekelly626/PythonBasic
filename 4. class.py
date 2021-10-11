@@ -178,3 +178,38 @@ customer_list = [k,m,p,w]
 
 for i in customer_list:
   print(i.getName(), ":", i.getSaving())
+
+  
+## 4. Advanced Class#
+class Animal:
+  def __init__(self, name):
+    self.m_name = name
+  
+  def getName(self):
+    return self.m_name
+
+class Shuisheng(Animal):
+  def canSwim(self):
+    print(self.m_name, "can swim.")
+
+class Lusheng(Animal):
+  def canRun(self):
+    print(self.m_name, "can run.")
+
+class Duck(Shuisheng,Lusheng):
+  pass # Python specific 
+
+k = Shuisheng('Kuangdi')
+m = Lusheng('Mincon')
+z = Duck('Pangpang')
+
+
+zoo = [k, m, z]
+for i in zoo:
+  print(i.getName(), "joined the zoo!")
+  
+  if isinstance(i,Shuisheng): ## 用来看type of object是不是在这个class一样
+    i.canSwim()
+
+  if isinstance(i,Lusheng):
+    i.canRun()
