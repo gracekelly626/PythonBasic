@@ -208,7 +208,7 @@ zoo = [k, m, z]
 for i in zoo:
   print(i.getName(), "joined the zoo!")
   
-  if isinstance(i,Shuisheng): ## 用来看type of object是不是在这个class一样
+  if isinstance(i,Shuisheng): ## 用来看type of object是不是这个class一样
     i.canSwim()
 
   if isinstance(i,Lusheng):
