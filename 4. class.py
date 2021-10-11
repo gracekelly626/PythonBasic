@@ -153,7 +153,7 @@ class Customer:
   def getSaving(self):
     return None
 
-class Saving(Customer):
+class SavingCustomer(Customer):
   def __init__(self, name, age, account_no, saving_amount):
     super().__init__(name, age, account_no)
     self.m_saving_amount = saving_amount
@@ -161,7 +161,7 @@ class Saving(Customer):
   def getSaving(self):
     return self.m_saving_amount
 
-class EverydaySaving(Saving):
+class EverydaySavingCustomer(SavingCustomer):
   def __init__(self, name, age, account_no, saving_amount, everyday_saving):
     super().__init__(name, age, account_no, saving_amount)
     self.m_everyday_saving = everyday_saving
@@ -169,12 +169,12 @@ class EverydaySaving(Saving):
   def getSaving(self):
     return self.m_everyday_saving + super().getSaving()
 
-k = EverydaySaving(name = "Kuangdi", age=25, account_no=3366, saving_amount = 6000, everyday_saving = 600)
-m = Saving(name = "MC", age=31, account_no=2266, saving_amount = 60000)
+k = EverydaySavingCustomer(name = "Kuangdi", age=25, account_no=3366, saving_amount = 6000, everyday_saving = 600)
+m = SavingCustomer(name = "MC", age=31, account_no=2266, saving_amount = 60000)
 p = Customer(name = "Pangpang", age=30, account_no=1166)
-w = EverydaySaving(name = "lwy", age=31, account_no=4466, saving_amount = 7000, everyday_saving = 700)
+w = EverydaySavingCustomer(name = "lwy", age=31, account_no=4466, saving_amount = 7000, everyday_saving = 700)
 
-customer_list = [k,m,p, w]
+customer_list = [k,m,p,w]
 
 for i in customer_list:
   print(i.getName(), ":", i.getSaving())
