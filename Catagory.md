@@ -5,7 +5,7 @@ https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 ## Supervised Learning - already know the ground thruth of input data 
 知道input & output， 找出mapping的过程
 
-#### classification - discrete output yb做分类 
+#### classification - discrete output  一般做分类 
 #### regression - continious output 一般做预测
 #### classification vs regression 
 e.g. object detection 
