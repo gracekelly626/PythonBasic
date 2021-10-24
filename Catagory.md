@@ -8,8 +8,9 @@ https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 #### classification - discrete output yb做分类 
 #### regression - continious output 一般做预测
 #### classification vs regression 
-object detection 
-分类 -  classification
+e.g. object detection 
+- 分类 -  classification
+- 找出位置大小 - regression 
 
 ## Unsupervised Learning - 不知道 ground truth need to find its underlying pattern but have algo to follow 
 - clustering
