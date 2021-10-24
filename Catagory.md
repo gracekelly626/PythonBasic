@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/90355504/138587642-451a06e2-99ec-4bba-8e5d-eb1002c331f1.png)
 https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 
-## Supervised Learning - already know the ground thruth of input data 
+## Supervised Learning - already know the ground thruth of input data （labeled）
 知道input & output， 找出mapping的过程
 
 #### classification - discrete output  一般做分类 
@@ -12,7 +12,7 @@ e.g. object detection
 - 分类 -  classification
 - 找出位置大小 - regression 
 
-## Unsupervised Learning - do not know ground truth need to find its underlying pattern but have algo to follow 
+## Unsupervised Learning - do not know ground truth of unlabeled data need to find its underlying pattern but have algo to follow 
 - clustering
 - 其他 - 生成模型:
 - 生成人脸，
