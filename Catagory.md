@@ -11,9 +11,9 @@ https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 object detection 
 分类 -  classification
 
-## Unsupervised Learning - 不知道 ground truth need to find its underlying info but have algo to follow 
+## Unsupervised Learning - 不知道 ground truth need to find its underlying pattern but have algo to follow 
 clustering
- 其他 - 生成模型
- 生成人脸， GAN， sample 里有1，2，3，4，5 数字图像， 生成和sample不一样的新的1，2，3，4数字图像
+其他 - 生成模型
+生成人脸， GAN， sample 里有1，2，3，4，5 数字图像， 生成和sample不一样的新的1，2，3，4数字图像
 
 ## deep learning - need to find intractable mapping 
