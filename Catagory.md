@@ -1,6 +1,6 @@
 # Machine Learning 
-traditional ML often work with structured data/ say tabular data 
-注意数据量 - 给direction 到用哪些model e.g. if the sample size < 10k & unlabeled data -> unsupervised learning
+- traditional ML often work with structured data/ say tabular data 
+- 注意数据量 - 给direction 到用哪些model e.g. if the sample size < 10k & unlabeled data -> unsupervised learning
 ![image](https://user-images.githubusercontent.com/90355504/138587642-451a06e2-99ec-4bba-8e5d-eb1002c331f1.png)
 https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 
