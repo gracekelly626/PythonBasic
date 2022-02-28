@@ -7,6 +7,12 @@ def sum_any(x):
   return result
 print(sum_any(10))
 
+### for loop - dictinary and numpy array
+# dictionary uses method; numpy array uses function;
+for key, value in my_dict.items():
+
+for value in np.nditer(my_array):
+
 
 ## while loop
 result = 0
