@@ -17,6 +17,11 @@ for value in my_array:
 # 2-D array
 for value in np.nditer(my_array):
 
+# pandas
+for lab, row in data.iterrows:
+  
+  #add column
+  data.loc[lab, 'xx'] = len(row['y'])
 
 ## while loop
 result = 0
