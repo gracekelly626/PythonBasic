@@ -9,8 +9,12 @@ print(sum_any(10))
 
 ### for loop - dictinary and numpy array
 # dictionary uses method; numpy array uses function;
+# dictinary
 for key, value in my_dict.items():
 
+# 1-D array
+for value in my_array:
+# 2-D array
 for value in np.nditer(my_array):
 
 
